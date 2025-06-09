@@ -13,7 +13,7 @@ module "db_subnet_group" {
 
 module "rds" {
   source            = "./modules/rds"
-  security_group_id = module.db_security_group.security_group_id
-  subnet_id_1       = module.db_subnet_group.subnet_id_1
-  subnet_id_2       = module.db_subnet_group.subnet_id_2
+  security_group_id = var.web_sg_id
+  subnet_id_1 = var.private_subnet_id_1
+  subnet_id_2 = var.private_subnet_id_2
 }
