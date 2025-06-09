@@ -12,7 +12,11 @@ provider "aws" {
   region = "us-west-2"
 }
 
-# Create a VPC
-resource "aws_vpc" "example" {
-  cidr_block = "10.0.0.0/16"
+resource "aws_instance" "app_server" {
+  ami           = "ami-06afbc42f893119e9"
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "Web Server 1"
+  }
 }
