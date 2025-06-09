@@ -5,3 +5,7 @@ output "db_sg_id" {
 # output "db_subnet_group_id" {
 #   value = module.db_subnet_group.RDS_subnet_group_id
 # }
+
+output "active_vpc_id" {
+  value = var.lab_vpc_id
+}

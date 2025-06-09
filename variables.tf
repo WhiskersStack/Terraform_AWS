@@ -14,9 +14,7 @@ variable "private_subnet_id_2" {
   description = "The ID of the second private subnet"
   type        = string
 }
-# variable "db_instance_class" {
-#   description = "The instance class for the RDS instance"
-#   type        = string
-#   default     = "db.t3.micro"
-
-# }
+variable "public_subnet_id" {
+  description = "ID of the public subnet"
+  type        = string
+}
