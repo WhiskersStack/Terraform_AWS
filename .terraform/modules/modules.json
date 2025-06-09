@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"db_security_group","Source":"./modules/security_group","Dir":"modules/security_group"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"db_security_group","Source":"./modules/security_group","Dir":"modules/security_group"},{"Key":"db_subnet_group","Source":"./modules/db_subnet_group","Dir":"modules/db_subnet_group"}]}
