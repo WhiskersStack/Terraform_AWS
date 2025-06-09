@@ -15,3 +15,7 @@ variable "subnet_id_2" {
   description = "The ID of the second subnet for the RDS instance."
   type        = string
 }
+variable "db_subnet_group_name" {
+  description = "The name of the DB subnet group for the RDS instance."
+  type        = string
+}
